@@ -2,11 +2,6 @@
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html lang="en">
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 
 <head>
     <meta charset="UTF-8">
@@ -19,10 +14,10 @@
     <title>Fitness Gym - A Modern Fitness Gym Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./resources/img/core-img/favicon.ico">
+    <link rel="icon" href="../resources/img/core-img/favicon.ico">
 
     <!-- Core Stylesheet -->
-    <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="../resources/style.css">
 
 </head>
 
@@ -42,7 +37,7 @@
                     <nav class="classy-navbar justify-content-between" id="fitnessNav">
 
                         <!-- Nav brand -->
-                        <a href="/" class="nav-brand"><img src="./resources/img/core-img/logo.png" alt=""></a>
+                        <a href="/" class="nav-brand"><img src="../resources/img/core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -61,14 +56,14 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="/">Home</a></li> 
-                                    <li><a href="about-us">About Us</a></li>
+                                    <li><a href="../about-us">About Us</a></li>
                                     <li><a href="./main/user-data">User Data</a></li>
-                                    <li><a href="notice">Notice</a></li>
-                                    <li><a href="contact">Contact</a></li>
+                                    <li><a href="../notice">Notice</a></li>
+                                    <li><a href="../contact">Contact</a></li>
                                 </ul>
 
                                 <!-- Login Button -->
-                                <a href="login" class="fitness-btn menu-btn ml-30">Login</a>
+                                <a href="../login" class="fitness-btn menu-btn ml-30">Login</a>
 
                             </div>
                             <!-- Nav End -->
@@ -101,80 +96,67 @@
     <!-- ##### Breadcumb Area End ##### -->
 
     <!-- ##### Contact Area Start ##### -->
-	<section class="contact-area section-padding-100">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="contact-title">
-						<h3>Please be noted.</h3>
-					</div>
-				</div>
-			</div>
+    <section class="contact-area section-padding-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-title">
+                        <h3>New Notice</h3>
+                    </div>
+                </div>
+            </div>
 
-			<div class="row">
-				<div class="col-12">
-					<ul class="notice-board">
+            <div class="row">
+                <div class="col-12">
+                
+                <form name = "frm" action="insert" method="post">
+					<ul class="notice-board-insert">
 						<!-- Contact Form Area -->
-
+						
 						<table>
 							<tr>
-								<td width="80">No.</td>
-								<td width="350">Title</td>
-								<td width="200">Writer</td>
-								<td width="200">Date</td>
+								<td>작성자</td>
+								<td><input type="text" name="writer" value="user00"></td>
 							</tr>
-							<tr class = "noticeList" onClick="funRead(1)">
-								<td width="80">1</td>
-								<td width="350">공지사항</td>
-								<td width="200">관리자</td>
-								<td width="200">2019-07-16</td>
+							<tr>
+								<td>제목</td>
+								<td><input type="text" name="title" size=40></td>
 							</tr>
-							
-							
-							
-							
-<!-- 가데이터
-							<c:forEach var="vo" items="${list}">
-								<tr class="row" onClick="funRead('${vo.bno}')">
-									<td width=50>${vo.bno}</td>
-									<td width=350>${vo.title}</td>
-									<td width=100>${vo.writer}</td>
-									<td width=100><fmt:formatDate pattern="yyyy-MM-dd"
-											value="${vo.regdate}" /></td>
-									<td width=100>${vo.viewcnt}</td>
-								</tr>
-							</c:forEach>
-  -->
-
-
-
+							<tr>
+								<td>내용</td>
+								<td><textarea name="content" rows="5" cols="50"></textarea></td>
+							</tr>
 						</table>
-
+							
 					</ul>
-					<button class="btn fitness-btn btn-white mt-50" onClick="funInsert()">Write</button>
+					<input type="submit" value="저장">
+					 <input type="reset" value="취소"> 
+					 <input	type="button" value="목록"  onClick="funList()">
+				 </form>
+
 				</div>
-			</div>
-		</div>
-	</section>
-	<!-- ##### Contact Area End ##### -->
+                </div>
+            </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">
-		<%@include file="footer.jsp" %>	<!-- footer 파일 인클루드 -->
+		<%@include file="../footer.jsp" %>	<!-- footer 파일 인클루드 -->
 	</div>
     <!-- ##### Footer Area Start ##### -->
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="./resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="../resources/js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="./resources/js/bootstrap/popper.min.js"></script>
+    <script src="../resources/js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="./resources/js/bootstrap/bootstrap.min.js"></script>
+    <script src="../resources/js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
-    <script src="./resources/js/plugins/plugins.js"></script>
+    <script src="../resources/js/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="./resources/js/active.js"></script>
+    <script src="../resources/js/active.js"></script>
     <!-- Live Chat Code :: Start of Tawk.to Script -->
     <script>
         var Tawk_API = Tawk_API || {},
@@ -189,15 +171,11 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
         
-        function funInsert(){
-        	location.href="./notice/insert"
+        function funList(){
+        	frm.action="../notice";
+        	frm.method="get";
+        	frm.submit();
         }
-        
-        function funRead(bno){
-    		location.href="notice/read?bno="+bno;
-    	}
-        
-        
     </script>
     <!-- End of Tawk.to Script -->
 </body>
