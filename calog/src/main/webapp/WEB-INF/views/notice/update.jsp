@@ -101,7 +101,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="contact-title">
-                        <h3>Notice</h3>
+                        <h3>공지사항 수정</h3>
                     </div>
                 </div>
             </div>
@@ -109,28 +109,28 @@
             <div class="row">
                 <div class="col-12">
                 
-                <form name = "frm" action="update" method="get">
+                <form name = "frm" action="insert" method="post">
 					<ul class="notice-board-insert">
 						<!-- Contact Form Area -->
 						
 						<table>
 							<tr>
 								<td>작성자</td>
-								<td><input type="text" name="writer" value="관리자" readOnly></td>
+								<td><input type="text" name="writer" value="관리자"></td>
 							</tr>
 							<tr>
 								<td>제목</td>
-								<td><input type="text" name="title" size=40 value = "공지사항" readOnly></td>
+								<td><input type="text" name="title" size=40 value = "공지사항"></td>
 							</tr>
 							<tr>
 								<td>내용</td>
-								<td><textarea name="content" rows="5" cols="50" readOnly>공지사항 데이터</textarea></td>
+								<td><textarea name="content" rows="5" cols="50">공지사항 데이터</textarea></td>
 							</tr>
 						</table>
 							
 					</ul>
-					<input type="submit" value="수정">
-					 <input type="button" value="삭제" onClick ="funDelete()"> 
+					<input type="button" value = "저장" onClick = "funUpdate()">
+					 <input type="button" value="취소" onClick ="funRead()"> 
 					 <input	type="button" value="목록"  onClick="funList()">
 				 </form>
 
@@ -171,19 +171,26 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
         
+        function funUpdate(){
+        	if(!confirm("수정하시겠습니까?")){return};
+        	frm.action="update";
+        	frm.method="post";
+        	frm.submit();
+        }
+        
+        function funRead(){
+        	frm.action="read";
+        	frm.method="get";
+        	frm.submit();
+        }
+        
         function funList(){
         	frm.action="../noticeboard";
         	frm.method="get";
         	frm.submit();
         }
         
-        function funDelete(bno){
-        	if(!confirm("삭제하시겠습니까?")){return;}
-    		frm.method="post"
-    		frm.action="delete"	//?bno 추후 추가
-    		frm.submit();
-        	
-        }
+ 
     </script>
     <!-- End of Tawk.to Script -->
 </body>

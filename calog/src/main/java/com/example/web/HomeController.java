@@ -41,32 +41,69 @@ public class HomeController {
 		return "contact";
 	}
 	
-	@RequestMapping(value = "/about-us", method = RequestMethod.GET)
+	@RequestMapping(value = "/about_us", method = RequestMethod.GET)
 	public String about() {
-		return "about-us";
+		return "about_us";
 	}
 	
-	@RequestMapping(value = "/notice", method = RequestMethod.GET)
+	@RequestMapping(value = "/noticeboard", method = RequestMethod.GET)
 	public String notice() {
-		return "notice";
-	}
-	
-	@RequestMapping(value = "/main/user-data", method = RequestMethod.GET)
-	public String userData() {
-		return "main/user-data";
+		return "noticeboard";
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
 	public String login() {
 		return "login";
 	}
-	@RequestMapping(value = "/notice/insert", method = RequestMethod.GET)
-	public String insert() {
-		return "notice/insert";
+	
+	
+	
+	//Main 폴더내 페이지
+	
+	
+	//회원 로그인 시 회원 데이터
+	@RequestMapping(value = "/main/user_data", method = RequestMethod.GET)
+	public String userData() {
+		return "main/user_data";
 	}
 	
+	
+	
+	//공지사항 페이지
+	//게시글 작성페이지 이동
+	@RequestMapping(value = "/notice/insert", method = RequestMethod.GET)
+	public String insertGet() {
+		return "notice/insert";
+	}
+	//게시글 작성 후 데이터 삽입
+	@RequestMapping(value = "/notice/insert", method = RequestMethod.POST)
+	public String insertPost() {
+		return "redirect:/noticeboard";		//공지게시판 이미지 로딩오류
+	}
+	
+	
+	//게시글 조회
 	@RequestMapping(value = "/notice/read", method = RequestMethod.GET)
 	public String read() {
 		return "notice/read";
+	}
+	
+	
+	//게시글 수정 페이지로 이동
+	@RequestMapping(value = "/notice/update", method = RequestMethod.GET)
+	public String updqteGet() {
+		return "notice/update";
+	}
+	
+	//게시글 수정 후 수정데이터 삽입
+	@RequestMapping(value = "/notice/update", method = RequestMethod.POST)
+	public String updatePost() {
+		return "notice/read";
+	}
+	
+	//게시글 삭제
+	@RequestMapping(value = "/notice/delete", method = RequestMethod.POST)
+	public String delete() {
+		return "redirect:/noticeboard";			//공지게시판 이미지 로딩오류
 	}
 }

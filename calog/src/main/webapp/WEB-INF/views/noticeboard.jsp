@@ -61,9 +61,9 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="/">Home</a></li> 
-                                    <li><a href="about-us">About Us</a></li>
-                                    <li><a href="./main/user-data">User Data</a></li>
-                                    <li><a href="notice">Notice</a></li>
+                                    <li><a href="about_us">About Us</a></li>
+                                    <li><a href="./main/user_data">User Data</a></li>
+                                    <li><a href="noticeboard">Notice</a></li>
                                     <li><a href="contact">Contact</a></li>
                                 </ul>
 
