@@ -826,19 +826,36 @@ text-shadow: 0px 0px 10px #FFFFFF;
 
 border: 3px solid #eaeaea;
 
-background-color: #DDDDDD;
+background-color: #FFFFFF;
 
 padding: 12px;
 
 font-family: Verdana, Geneva, sans-serif;
 
-font-size: 15pt;
+font-size: 13pt;
 
 color: #838383;
 
 text-align: center;}
     .notice-board td:hover, .notice-board td:focus {
 	  color: #38b143; }
+	  
+	 /* :: 10.1 Notice Board CSS */
+  .notice-board-insert td {
+text-shadow: 0px 0px 10px #FFFFFF;
+
+border: 3px solid #eaeaea;
+
+background-color: #FFFFFF;
+
+padding: 12px;
+
+font-family: Verdana, Geneva, sans-serif;
+
+font-size: 13pt;
+
+color: #838383;}
+
 
 
 

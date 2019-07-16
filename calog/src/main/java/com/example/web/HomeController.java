@@ -60,4 +60,13 @@ public class HomeController {
 	public String login() {
 		return "login";
 	}
+	@RequestMapping(value = "/notice/insert", method = RequestMethod.GET)
+	public String insert() {
+		return "notice/insert";
+	}
+	
+	@RequestMapping(value = "/notice/read", method = RequestMethod.GET)
+	public String read() {
+		return "notice/read";
+	}
 }
