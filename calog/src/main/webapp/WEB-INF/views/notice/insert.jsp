@@ -56,9 +56,9 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="/">Home</a></li> 
-                                    <li><a href="../about-us">About Us</a></li>
-                                    <li><a href="./main/user-data">User Data</a></li>
-                                    <li><a href="../notice">Notice</a></li>
+                                    <li><a href="../about_us">About Us</a></li>
+                                    <li><a href="./main/user_data">User Data</a></li>
+                                    <li><a href="../noticeboard">Notice</a></li>
                                     <li><a href="../contact">Contact</a></li>
                                 </ul>
 
@@ -76,7 +76,7 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(./resources/img/bg-img/breadcumb-2.jpg);">
+    <div class="breadcumb-area bg-img bg-overlay" style="background-image: url(../resources/img/bg-img/breadcumb-2.jpg);">
         <div class="bradcumbContent">
             <div class="container">
                 <div class="row">
@@ -101,7 +101,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="contact-title">
-                        <h3>New Notice</h3>
+                        <h3>공지사항 작성</h3>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
 						<table>
 							<tr>
 								<td>작성자</td>
-								<td><input type="text" name="writer" value="user00"></td>
+								<td><input type="text" name="writer" value="관리자"></td>
 							</tr>
 							<tr>
 								<td>제목</td>
@@ -172,7 +172,7 @@
         })();
         
         function funList(){
-        	frm.action="../notice";
+        	frm.action="../noticeboard";
         	frm.method="get";
         	frm.submit();
         }

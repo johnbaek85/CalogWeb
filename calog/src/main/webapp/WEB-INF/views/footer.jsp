@@ -85,17 +85,17 @@
                     <div class="col-12 col-sm-6 col-lg-3">
                         <div class="footer-widget-area mb-50">
                             <div class="widget-title">
-                                <h6>Classes</h6>
+                                <h6>7Hours</h6>
                             </div>
 
                             <nav>
                                 <ul class="fitness-classes">
-                                    <li><a href="#">Bodybuilding Class</a></li>
-                                    <li><a href="#">Fitness Class</a></li>
-                                    <li><a href="#">Yoga Courses</a></li>
-                                    <li><a href="#">Dumbell Class</a></li>
-                                    <li><a href="#">Spinning Class</a></li>
-                                    <li><a href="#">Kangoo Jump Class</a></li>
+                                    <li><a href="#">최기현</a></li>
+                                    <li><a href="#">백종화</a></li>
+                                    <li><a href="#">이남희</a></li>
+                                    <li><a href="#">이승헌</a></li>
+                                    <li><a href="#">김승현</a></li>
+                                    <li><a href="#">지준혁</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -110,20 +110,20 @@
 
                             <!-- Single Contact -->
                             <div class="single-contact mb-30">
-                                <span>Address:</span>
-                                <p>481 Creekside Lane Avila <br>Beach, CA 93424</p>
+                                <span>주소:</span>
+                                <p>서울특별시 금천구 가산동 426-5 월드메르디앙2차410호</p>
                             </div>
 
                             <!-- Single Contact -->
                             <div class="single-contact mb-30">
-                                <span>Phone:</span>
-                                <p>+53 345 7953 32453</p>
+                                <span>전화번호:</span>
+                                <p>02-2025-4178</p>
                             </div>
 
                             <!-- Single Contact -->
                             <div class="single-contact mb-30">
                                 <span>Email:</span>
-                                <p>yourmail@gmail.com</p>
+                                <p>7Hours@7Hours.com</p>
                             </div>
 
                         </div>
@@ -139,7 +139,7 @@
                 <div class="row">
                     <div class="col-12">
                         <p><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">7Hours</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </p>
                     </div>
