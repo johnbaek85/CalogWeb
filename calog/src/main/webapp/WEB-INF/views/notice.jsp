@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -125,15 +124,15 @@
 							</tr>
 							<tr class = "noticeList" onClick="funRead(1)">
 								<td width="80">1</td>
-								<td width="350">°øÁö»çÇ×</td>
-								<td width="200">°ü¸®ÀÚ</td>
+								<td width="350">ê³µì§€ì‚¬í•­</td>
+								<td width="200">ê´€ë¦¬ìž</td>
 								<td width="200">2019-07-16</td>
 							</tr>
 							
 							
 							
 							
-<!-- °¡µ¥ÀÌÅÍ
+<!-- ê°€ë°ì´í„°
 							<c:forEach var="vo" items="${list}">
 								<tr class="row" onClick="funRead('${vo.bno}')">
 									<td width=50>${vo.bno}</td>
@@ -160,7 +159,7 @@
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">
-		<%@include file="footer.jsp" %>	<!-- footer ÆÄÀÏ ÀÎÅ¬·çµå -->
+		<%@include file="footer.jsp" %>	<!-- footer íŒŒì¼ ì¸í´ë£¨ë“œ -->
 	</div>
     <!-- ##### Footer Area Start ##### -->
 

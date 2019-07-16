@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -100,7 +99,7 @@
         <div class="container">
             <div class="row">
 
-               <h1>·Î±×ÀÎ ÆäÀÌÁö</h1>
+               <h1>ë¡œê·¸ì¸ íŽ˜ì´ì§€</h1>
             </div>
         </div>
     </div>
@@ -109,7 +108,7 @@
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">
-		<%@include file="footer.jsp" %>	<!-- footer ÆÄÀÏ ÀÎÅ¬·çµå -->
+		<%@include file="footer.jsp" %>	<!-- footer íŒŒì¼ ì¸í´ë£¨ë“œ -->
 	</div>
 
     <!-- ##### Footer Area Start ##### -->

@@ -1,8 +1,10 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
-<html lang="en">
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<html lang="ko">
 
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -144,76 +146,96 @@
     <!-- ##### Pricing Table Area Start ##### -->
     <div class="fitness-pricing-table-area section-padding-100-0 bg-img bg-overlay bg-fixed" style="background-image: url(./resources/img/bg-img/bg-7.jpg);">
         <div class="container">
-            <div class="row justify-content-center">
+			<div class="row justify-content-center">
 
-                <!-- Single Price Table -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-price-table mb-100">
-                        <img src="./resources/img/bg-img/bg-8.jpg" alt="">
-                        <div class="price-table-content">
-                            <!-- price -->
-                            <h2 class="price">
-                                $50<span>/ Month</span>
-                            </h2>
-                            <h5>Woman Fitness Class</h5>
-                            <!-- Price Data -->
-                            <ul class="price-data">
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Sit amet aliquet auctor nisi</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Dut purus eleifentincid</li>
-                            </ul>
-                            <!-- btn -->
-                            <a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
+				<!-- Single Price Table -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="single-price-table mb-100">
+						<img src="./resources/img/bg-img/bg-8.jpg" alt="">
+						<div class="price-table-content">
+							<!-- price -->
+							<h2 class="price">
+								$50<span>/ Month</span>
+							</h2>
+							<h5>운동 관리</h5>
+							<!-- Price Data -->
+							<ul class="price-data">
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Sit amet aliquet auctor nisi</li>
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Dut	purus eleifentincid</li>
+							</ul>
+							<!-- btn -->
+							<a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
+						</div>
+					</div>
+				</div>
 
-                <!-- Single Price Table -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-price-table mb-100">
-                        <img src="./resources/img/bg-img/bg-9.jpg" alt="">
-                        <div class="price-table-content">
-                            <!-- price -->
-                            <h2 class="price">
-                                $70<span>/ Month</span>
-                            </h2>
-                            <h5>Spinning Class + BONUS</h5>
-                            <!-- Price Data -->
-                            <ul class="price-data">
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Sit amet aliquet auctor nisi</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Dut purus eleifentincid</li>
-                            </ul>
-                            <!-- btn -->
-                            <a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
+				<!-- Single Price Table -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="single-price-table mb-100">
+						<img src="./resources/img/bg-img/bg-9.jpg" alt="">
+						<div class="price-table-content">
+							<!-- price -->
+							<h2 class="price">
+								$70<span>/ Month</span>
+							</h2>
+							<h5>식단 관리</h5>
+							<!-- Price Data -->
+							<ul class="price-data">
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Sit	amet aliquet auctor nisi</li>
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Dut	purus eleifentincid</li>
+							</ul>
+							<!-- btn -->
+							<a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
+						</div>
+					</div>
+				</div>
 
-                <!-- Single Price Table -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-price-table mb-100">
-                        <img src="./resources/img/bg-img/bg-10.jpg" alt="">
-                        <div class="price-table-content">
-                            <!-- price -->
-                            <h2 class="price">
-                                $90<span>/ Month</span>
-                            </h2>
-                            <h5>All Inclusive Gym</h5>
-                            <!-- Price Data -->
-                            <ul class="price-data">
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Sit amet aliquet auctor nisi</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Dut purus eleifentincid</li>
-                            </ul>
-                            <!-- btn -->
-                            <a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
+				<!-- Single Price Table -->
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="single-price-table mb-100">
+						<img src="./resources/img/bg-img/bg-10.jpg" alt="">
+						<div class="price-table-content">
+							<!-- price -->
+							<h2 class="price">
+								$90<span>/ Month</span>
+							</h2>
+							<h5>수면 관리</h5>
+							<!-- Price Data -->
+							<ul class="price-data">
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Sit	amet aliquet auctor nisi</li>
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Dut	purus eleifentincid</li>
+							</ul>
+							<!-- btn -->
+							<a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
+						</div>
+					</div>
+				</div>
 
-            </div>
-        </div>
+				<div class="col-12 col-md-6 col-lg-4">
+					<div class="single-price-table mb-100">
+						<img src="./resources/img/bg-img/bg-10.jpg" alt="">
+						<div class="price-table-content">
+							<!-- price -->
+							<h2 class="price">
+								$90<span>/ Month</span>
+							</h2>
+							<h5>음주 관리</h5>
+							<!-- Price Data -->
+							<ul class="price-data">
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Sit	amet aliquet auctor nisi</li>
+								<li><i class="fa fa-circle" aria-hidden="true"></i> Dut	purus eleifentincid</li>
+							</ul>
+							<!-- btn -->
+							<a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
     </div>
     <!-- ##### Pricing Table Area End ##### -->
 
@@ -221,7 +243,7 @@
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">
-		<%@include file="footer.jsp" %>	<!-- footer 파일 인클루드 -->
+		<%@include file="footer.jsp" %>	<!-- footer íì¼ ì¸í´ë£¨ë -->
 	</div>
     <!-- ##### Footer Area Start ##### -->
 
