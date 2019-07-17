@@ -1,4 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="form"  uri="http://www.springframework.org/tags/form" %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -110,21 +113,43 @@
                     <div class="contact-content">
                         <!-- Contact Form Area -->
                         <div class="contact-form-area">
-                            <form action="#" method="post">
+                            <%-- <form action="/mailSending" method="post" enctype="text/plain">
+                            <!-- <form action="mailto:toki42ver@naver.com?subject=Comments from MailTo Syntax Page" method="post" enctype="text/plain"> -->
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" name = "sendername"  placeholder="Your Name">
+                                    
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Your E-mail">
+                                    <input type="email" class="form-control" name="sendermail" placeholder="Your E-mail">
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <input type="text" class="form-control" name = "title"  placeholder="subject">
                                 </div>
                                 <div class="form-group">
-                                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    <textarea name="message" class="form-control" name = "content"  cols="30" rows="10" placeholder="Message"></textarea>
                                 </div>
                                 <button class="btn fitness-btn btn-2 mt-30" type="submit">Contact Us</button>
-                            </form>
+                            </form> --%>
+                            
+                            <form action="/mailSending" method="post">
+							    <div align="center"><!-- 받는 사람 이메일 -->
+							      <input type="email" name="yourmail" size="120" style="width:100%" placeholder="회신받을 메일 주소를 입력하셍" class="form-control" >
+							    </div>
+							    <div align="center"><!-- 받는 사람 이름 -->
+							      <input type="text" name="yourname" size="120" style="width:100%" placeholder="이름을 입력해주세요" class="form-control" >
+							    </div>     
+							    <div align="center"><!-- 제목 -->
+							      <input type="text" name="title" size="120" style="width:100%" placeholder="제목을 입력해주세요" class="form-control" >
+							    </div>
+							    <p>
+							    <div align="center"><!-- 내용 --> 
+							      <textarea name="content" cols="120" rows="12" style="width:100%; resize:none" placeholder="내용#" class="form-control"></textarea>
+							    </div>
+							    <p>
+							    <div align="center">
+							      <input type="submit" value="메일 보내기" class="btn btn-warning">
+							    </div>
+					  		</form>
                         </div>
                     </div>
                 </div>
