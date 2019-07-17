@@ -4,12 +4,18 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.inject.Inject;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.example.domain.PageMaker;
+import com.example.domain.SearchCriteria;
+import com.example.persistence.BoardDAO;
 
 /**
  * Handles requests for the application home page.
@@ -36,6 +42,12 @@ public class HomeController {
 		return "home";
 	}	
 	
+	
+	
+	@Inject
+	private BoardDAO dao;
+	
+	
 	@RequestMapping(value = "/contact", method = RequestMethod.GET)
 	public String contact() {
 		return "contact";
@@ -46,8 +58,16 @@ public class HomeController {
 		return "about_us";
 	}
 	
-	@RequestMapping(value = "/noticeboard", method = RequestMethod.GET)
-	public String notice() {
+	@RequestMapping("/noticeboard")
+	public String notice(SearchCriteria cri, Model model) throws Exception{			//board list
+		PageMaker pm = new PageMaker();
+		pm.setCri(cri);
+		pm.setDisplayPageNum(5);
+		pm.setTotalCount(dao.count(cri));
+		
+		model.addAttribute("cri", cri);
+		model.addAttribute("pm", pm);
+		model.addAttribute("list", dao.list(cri));
 		return "noticeboard";
 	}
 	
@@ -58,10 +78,10 @@ public class HomeController {
 	
 	
 	
-	//Main Æú´õ³» ÆäÀÌÁö
+	//Main í˜ì´ì§€
 	
 	
-	//È¸¿ø ·Î±×ÀÎ ½Ã È¸¿ø µ¥ÀÌÅÍ
+	//ì‚¬ìš©ì ë¡œê·¸ì¸ ì‹œ
 	@RequestMapping(value = "/main/user_data", method = RequestMethod.GET)
 	public String userData() {
 		return "main/user_data";
@@ -69,41 +89,5 @@ public class HomeController {
 	
 	
 	
-	//°øÁö»çÇ× ÆäÀÌÁö
-	//°Ô½Ã±Û ÀÛ¼ºÆäÀÌÁö ÀÌµ¿
-	@RequestMapping(value = "/notice/insert", method = RequestMethod.GET)
-	public String insertGet() {
-		return "notice/insert";
-	}
-	//°Ô½Ã±Û ÀÛ¼º ÈÄ µ¥ÀÌÅÍ »ğÀÔ
-	@RequestMapping(value = "/notice/insert", method = RequestMethod.POST)
-	public String insertPost() {
-		return "redirect:/noticeboard";		//°øÁö°Ô½ÃÆÇ ÀÌ¹ÌÁö ·Îµù¿À·ù
-	}
 	
-	
-	//°Ô½Ã±Û Á¶È¸
-	@RequestMapping(value = "/notice/read", method = RequestMethod.GET)
-	public String read() {
-		return "notice/read";
-	}
-	
-	
-	//°Ô½Ã±Û ¼öÁ¤ ÆäÀÌÁö·Î ÀÌµ¿
-	@RequestMapping(value = "/notice/update", method = RequestMethod.GET)
-	public String updqteGet() {
-		return "notice/update";
-	}
-	
-	//°Ô½Ã±Û ¼öÁ¤ ÈÄ ¼öÁ¤µ¥ÀÌÅÍ »ğÀÔ
-	@RequestMapping(value = "/notice/update", method = RequestMethod.POST)
-	public String updatePost() {
-		return "notice/read";
-	}
-	
-	//°Ô½Ã±Û »èÁ¦
-	@RequestMapping(value = "/notice/delete", method = RequestMethod.POST)
-	public String delete() {
-		return "redirect:/noticeboard";			//°øÁö°Ô½ÃÆÇ ÀÌ¹ÌÁö ·Îµù¿À·ù
-	}
 }

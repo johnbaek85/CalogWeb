@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper">
+    <mapper namespace="BoardMapper">
+    	<select id="list" resultType = "BoardVO">
+
+		select * from board 
+		<if test = "searchType=='title'">
+			where title like concat('%',#{keyword},'%')
+		</if>
+		<if test = "searchType=='content'">
+			where content like concat('%',#{keyword},'%')
+		</if>
+		<if test = "searchType=='writer'">
+			where writer like concat('%',#{keyword},'%')
+		</if>
+		order by bno desc
+		limit #{pageStart}, #{perPageNum}
+	</select>
+	
+	
+	<select id="count" resultType="Integer">
+
+		select count(*) from board
+		<if test="searchType=='title'">
+			where title like concat('%',#{keyword},'%')
+		</if>
+		<if test="searchType=='content'">
+			where content like concat('%',#{keyword},'%')
+		</if>
+		<if test="searchType=='writer'">
+			where writer like concat('%',#{keyword},'%')
+		</if>
+
+	</select>
+	
+	<update id="updateView">
+		update board
+		set viewcnt=viewcnt+1
+		where bno=#{bno}
+	</update>
+	
+	
+	
+	
+	<select id = "read" resultType = "BoardVO">
+		select * from board where bno = #{bno}
+	</select>
+	
+	<update id = "update">
+		update board set title=#{title}, content=#{content}	where bno=#{bno}
+	
+	</update>
+	
+	<insert id = "insert">
+		insert into board(title, content, writer) value(#{title}, #{content}, #{writer})
+	</insert>
+	
+	<delete id = "delete">
+		delete from board where bno=#{bno}
+	</delete>
+	</mapper>
+	

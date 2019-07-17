@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
   <footer class="footer-area section-padding-100-0 bg-img bg-overlay" style="background-image: url(../resources/img/bg-img/bg-11.jpg);">
 
@@ -41,12 +41,12 @@
                                 <div class="single-slide">
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°The best diet and fitness record app I've ever used!"</p>
+                                        <p>â€œThe best diet and fitness record app I've ever used!"</p>
                                         <span>Michael Smith</span>
                                     </div>
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°I can't believe that I lose 20kg through it, I strongly recommend this app to all of you!"</p>
+                                        <p>â€œI can't believe that I lose 20kg through it, I strongly recommend this app to all of you!"</p>
                                         <span>Julia Williams</span>
                                     </div>
                                 </div>
@@ -54,12 +54,12 @@
                                 <div class="single-slide">
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°I almost bankrupted due to my drinking habit, I'd spent about $1,000 a month for alchol, after this app, my life has been changed."</p>
+                                        <p>â€œI almost bankrupted due to my drinking habit, I'd spent about $1,000 a month for alchol, after this app, my life has been changed."</p>
                                         <span>Heavy Drunker</span>
                                     </div>
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°Thank you for your efforts, it changed my daily patterns and it leads me to be a better man!"</p>
+                                        <p>â€œThank you for your efforts, it changed my daily patterns and it leads me to be a better man!"</p>
                                         <span>Food addicted</span>
                                     </div>
                                 </div>
@@ -67,12 +67,12 @@
                                 <div class="single-slide">
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°I can check my sleep pattern and it helps me a lot!"</p>
+                                        <p>â€œI can check my sleep pattern and it helps me a lot!"</p>
                                         <span>Jamman-Bo</span>
                                     </div>
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°All you need to do is just download this app and sing in, so easy and simple application!"</p>
+                                        <p>â€œAll you need to do is just download this app and sing in, so easy and simple application!"</p>
                                         <span>KOSMO</span>
                                     </div>
                                 </div>
@@ -90,12 +90,12 @@
 
                             <nav>
                                 <ul class="fitness-classes">
-                                    <li><a href="#">ÃÖ±âÇö</a></li>
-                                    <li><a href="#">¹éÁ¾È­</a></li>
-                                    <li><a href="#">ÀÌ³²Èñ</a></li>
-                                    <li><a href="#">ÀÌ½ÂÇå</a></li>
-                                    <li><a href="#">±è½ÂÇö</a></li>
-                                    <li><a href="#">ÁöÁØÇõ</a></li>
+                                    <li><a href="#">ìµœê¸°í˜„</a></li>
+                                    <li><a href="#">ë°±ì¢…í™”</a></li>
+                                    <li><a href="#">ì´ë‚¨í¬</a></li>
+                                    <li><a href="#">ì´ìŠ¹í—Œ</a></li>
+                                    <li><a href="#">ê¹€ìŠ¹í˜„</a></li>
+                                    <li><a href="#">ì§€ì¤€í˜</a></li>
                                 </ul>
                             </nav>
                         </div>
@@ -110,13 +110,13 @@
 
                             <!-- Single Contact -->
                             <div class="single-contact mb-30">
-                                <span>ÁÖ¼Ò:</span>
-                                <p>¼­¿ïÆ¯º°½Ã ±İÃµ±¸ °¡»êµ¿ 426-5 ¿ùµå¸Ş¸£µğ¾Ó2Â÷410È£</p>
+                                <span>ì£¼ì†Œ:</span>
+                                <p>ì„œìš¸íŠ¹ë³„ì‹œ ê¸ˆì²œêµ¬ ê°€ì‚°ë™ 426-5 ì›”ë“œë©”ë¥´ë””ì•™2ì°¨410í˜¸</p>
                             </div>
 
                             <!-- Single Contact -->
                             <div class="single-contact mb-30">
-                                <span>ÀüÈ­¹øÈ£:</span>
+                                <span>ì „í™”ë²ˆí˜¸:</span>
                                 <p>02-2025-4178</p>
                             </div>
 

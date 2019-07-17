@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -106,43 +106,58 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12">
-                
-                <form name = "frm" action="update" method="get">
-					<ul class="notice-board-insert">
-						<!-- Contact Form Area -->
-						
-						<table>
-							<tr>
-								<td>ÀÛ¼ºÀÚ</td>
-								<td><input type="text" name="writer" value="°ü¸®ÀÚ" readOnly></td>
-							</tr>
-							<tr>
-								<td>Á¦¸ñ</td>
-								<td><input type="text" name="title" size=40 value = "°øÁö»çÇ×" readOnly></td>
-							</tr>
-							<tr>
-								<td>³»¿ë</td>
-								<td><textarea name="content" rows="5" cols="50" readOnly>°øÁö»çÇ× µ¥ÀÌÅÍ</textarea></td>
-							</tr>
-						</table>
+			<div class="row">
+				<div class="col-12">
+
+					<form name="frm">
+						<input type="hidden" name="bno" value="${vo.bno}">
+						<input type="hidden" name="page" value="${cri.page}">
+						<input type="hidden" name="searchType" value="${cri.searchType}">
+						<input type="hidden" name="keyword" value="${cri.keyword}">
+
+
+						<ul class="notice-board-insert">
+							<!-- Contact Form Area -->
+
+							<table>
+								<tr>
+									<td>No.</td>
+									<td><input type="text" value="${vo.bno}"
+										readOnly></td>
+								</tr>
+								<tr>
+									<td>ì‘ì„±ì</td>
+									<td><input type="text" name="writer" value="${vo.writer}"
+										readOnly></td>
+								</tr>
+								<tr>
+									<td>ì œëª©</td>
+									<td><input type="text" name="title" size=40
+										value="${vo.title}" readOnly></td>
+								</tr>
+								<tr>
+									<td>ë‚´ìš©</td>
+									<td><textarea name="content" rows="5" cols="50" readOnly>${vo.content}</textarea></td>
+								</tr>
+							</table>
 							
-					</ul>
-					<input type="submit" value="¼öÁ¤">
-					 <input type="button" value="»èÁ¦" onClick ="funDelete()"> 
-					 <input	type="button" value="¸ñ·Ï"  onClick="funList()">
-				 </form>
+							
+
+						</ul>
+							<button class="small-btn" value="ìˆ˜ì •" onClick="funUpdate()">ìˆ˜ì •</button>
+							<button class="small-btn"  value="ì‚­ì œ" onClick="funDelete()">ì‚­ì œ</button> 
+							<button class="small-btn"  value="ëª©ë¡" onClick="funList()">ëª©ë¡</button>
+					</form>
 
 				</div>
-                </div>
-            </div>
+			</div>
+		</div>
     </section>
     <!-- ##### Contact Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">
-		<%@include file="../footer.jsp" %>	<!-- footer ÆÄÀÏ ÀÎÅ¬·çµå -->
+		<%@include file="../footer.jsp" %>	<!-- footer íŒŒì¼ ì¸í´ë£¨ë“œ -->
 	</div>
     <!-- ##### Footer Area Start ##### -->
 
@@ -171,16 +186,22 @@
             s0.parentNode.insertBefore(s1, s0);
         })();
         
-        function funList(){
-        	frm.action="../noticeboard";
+        function funUpdate(){
+        	frm.action="update";
         	frm.method="get";
         	frm.submit();
         }
         
-        function funDelete(bno){
-        	if(!confirm("»èÁ¦ÇÏ½Ã°Ú½À´Ï±î?")){return;}
+        function funList(){
+        	frm.action="../noticeboard"
+        	frm.method="get"
+        	frm.submit();
+        }
+        
+        function funDelete(){
+        	if(!confirm("ì‚­ì œí•˜ì‹œê² ìŠµë‹ˆê¹Œ?")){return;}
+        	frm.action="delete"
     		frm.method="post"
-    		frm.action="delete"	//?bno ÃßÈÄ Ãß°¡
     		frm.submit();
         	
         }

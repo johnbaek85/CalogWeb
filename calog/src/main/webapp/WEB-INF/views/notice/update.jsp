@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,7 +101,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="contact-title">
-                        <h3>°øÁö»çÇ× ¼öÁ¤</h3>
+                        <h3>ê³µì§€ì‚¬í•­ ìˆ˜ì •</h3>
                     </div>
                 </div>
             </div>
@@ -109,29 +109,39 @@
             <div class="row">
                 <div class="col-12">
                 
-                <form name = "frm" action="insert" method="post">
+                <form name = "frm" action="update" method="post">
+		                <input type="hidden" name="bno" value="${vo.bno}">
+						<input type="hidden" name="page" value="${cri.page}">
+						<input type="hidden" name="searchType"value="${cri.searchType}">
+						<input type="hidden" name="keyword" value="${cri.keyword}">
+                
+                
 					<ul class="notice-board-insert">
 						<!-- Contact Form Area -->
 						
 						<table>
-							<tr>
-								<td>ÀÛ¼ºÀÚ</td>
-								<td><input type="text" name="writer" value="°ü¸®ÀÚ"></td>
+								<tr>
+									<td>No.</td>
+									<td><input type="text" value="${vo.bno}" readOnly></td>
+								</tr>
+								<tr>
+								<td>ì‘ì„±ì</td>
+								<td><input type="text" name="writer" value="${vo.writer}" readOnly></td>
 							</tr>
 							<tr>
-								<td>Á¦¸ñ</td>
-								<td><input type="text" name="title" size=40 value = "°øÁö»çÇ×"></td>
+								<td>ì œëª©</td>
+								<td><input type="text" name="title" size=40 value = "${vo.title}"></td>
 							</tr>
 							<tr>
-								<td>³»¿ë</td>
-								<td><textarea name="content" rows="5" cols="50">°øÁö»çÇ× µ¥ÀÌÅÍ</textarea></td>
+								<td>ë‚´ìš©</td>
+								<td><textarea name="content" rows="5" cols="50">${vo.content}</textarea></td>
 							</tr>
 						</table>
 							
 					</ul>
-					<input type="button" value = "ÀúÀå" onClick = "funUpdate()">
-					 <input type="button" value="Ãë¼Ò" onClick ="funRead()"> 
-					 <input	type="button" value="¸ñ·Ï"  onClick="funList()">
+					<button class = "small-btn" value="ì €ì¥" onClick = "funUpdate()">ì €ì¥</button>
+					 <button class = "small-btn" value="ì·¨ì†Œ" onClick ="funRead('${vo.bno}')">ì·¨ì†Œ</button>
+					 <button class = "small-btn" value="ëª©ë¡"  onClick="funList()">ëª©ë¡</button>
 				 </form>
 
 				</div>
@@ -142,7 +152,7 @@
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">
-		<%@include file="../footer.jsp" %>	<!-- footer ÆÄÀÏ ÀÎÅ¬·çµå -->
+		<%@include file="../footer.jsp" %>	<!-- footer íŒŒì¼ ì¸í´ë£¨ë“œ -->
 	</div>
     <!-- ##### Footer Area Start ##### -->
 
@@ -172,14 +182,14 @@
         })();
         
         function funUpdate(){
-        	if(!confirm("¼öÁ¤ÇÏ½Ã°Ú½À´Ï±î?")){return};
+        	if(!confirm("ìˆ˜ì •í•˜ì‹œê² ìŠµë‹ˆê¹Œ?")){return};
         	frm.action="update";
         	frm.method="post";
         	frm.submit();
         }
         
-        function funRead(){
-        	frm.action="read";
+        function funRead(bno){
+        	frm.action="read?"+bno;
         	frm.method="get";
         	frm.submit();
         }

@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -7,6 +7,10 @@
 <%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
+<style>
+#search{height:28px; color:white; padding:5pz; margin-bottom:30px;-webkit-box-align: center;}
+#pagination{height:28px; color:white; padding:5pz; margin-bottom:10px; text-align:center; font-color:white;webkit-box-align: center;}
+</style>
 
 <head>
     <meta charset="UTF-8">
@@ -115,40 +119,51 @@
 				<div class="col-12">
 					<ul class="notice-board">
 						<!-- Contact Form Area -->
+						
+						
+					<form name = "frm">
+						<div id = "search">
+							
+							<select name="searchType" class="serchType_slot">
+								<option value="title"
+									<c:out value="${cri.searchType=='title'?'selected':''}"/>>Ï†úÎ™©</option>
+								<option value="content"
+									<c:out value="${cri.searchType=='content'?'selected':''}"/>>ÎÇ¥Ïö©</option>
+								<option value="writer"
+									<c:out value="${cri.searchType=='writer'?'selected':''}"/>>Ï†ÄÏûê</option>
+							</select> 
+			
+							<input type="hidden" name="bno"> 
+							<input type="hidden"name="page" value="${cri.page}">
+							<input class = "keyword-slot" type="text"name="keyword" value="${cri.keyword}"> 
+							<button class = "small-btn"value="Í≤ÄÏÉâ" onClick="funSearch()">Í≤ÄÏÉâ</button> 
+							Í≤ÄÏÉâÎç∞Ïù¥ÌÑ∞:${pm.totalCount}Í±¥
 
+						</div>
+					</form>
 						<table>
 							<tr>
 								<td width="80">No.</td>
 								<td width="350">Title</td>
 								<td width="200">Writer</td>
 								<td width="200">Date</td>
-							</tr>
-							<tr class = "noticeList" onClick="funRead(1)">
-								<td width="80">1</td>
-								<td width="350">∞¯¡ˆªÁ«◊</td>
-								<td width="200">∞¸∏Æ¿⁄</td>
-								<td width="200">2019-07-16</td>
+								<td width="80">View</td>
 							</tr>
 							
-							
-							
-							
-<!-- ∞°µ•¿Ã≈Õ
-							<c:forEach var="vo" items="${list}">
-								<tr class="row" onClick="funRead('${vo.bno}')">
-									<td width=50>${vo.bno}</td>
-									<td width=350>${vo.title}</td>
-									<td width=100>${vo.writer}</td>
-									<td width=100><fmt:formatDate pattern="yyyy-MM-dd"
+							<c:forEach var = "vo" items = "${list}">
+							<tr class = "noticeList" onClick="funRead('${vo.bno}')"style="cursor:pointer">
+								<td width="80">${vo.bno}</td>
+								<td width="350">${vo.title}</td>
+								<td width="200">${vo.writer}</td>
+								<td width="200"><fmt:formatDate pattern="yyyy-MM-dd"
 											value="${vo.regdate}" /></td>
-									<td width=100>${vo.viewcnt}</td>
-								</tr>
+								<td width="80">${vo.viewcnt}</td>
+							</tr>
 							</c:forEach>
-  -->
-
-
-
 						</table>
+						<div id="pagination">
+							<%@include file="./pagination.jsp"%>
+						</div>
 
 					</ul>
 					<button class="btn fitness-btn btn-white mt-50" onClick="funInsert()">Write</button>
@@ -160,7 +175,7 @@
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">
-		<%@include file="footer.jsp" %>	<!-- footer ∆ƒ¿œ ¿Œ≈¨∑ÁµÂ -->
+		<%@include file="footer.jsp" %>	<!-- footer ÌååÏùº Ïù∏ÌÅ¥Î£®Îìú -->
 	</div>
     <!-- ##### Footer Area Start ##### -->
 
@@ -190,12 +205,33 @@
         })();
         
         function funInsert(){
-        	location.href="./notice/insert"
+        	frm.method="get";
+    		frm.action="./notice/insert";
+    		frm.submit();
         }
         
         function funRead(bno){
-    		location.href="notice/read?bno="+bno;
+        	frm.bno.value=bno;
+        	frm.method="get";
+        	frm.action="notice/read";
+        	frm.submit();
     	}
+        
+        function funSearch(){
+        	frm.page.value=1;
+    		frm.method="get";
+    		frm.action="./noticeboard";
+    		frm.submit();
+        	
+        }
+        
+        $("#pagination").on("click","a",function(){
+    		event.preventDefault();
+    		frm.page.value=$(this).attr("href");
+    		frm.action="./noticeboard";
+    		frm.method="get";
+    		frm.submit();
+    	});
         
         
     </script>

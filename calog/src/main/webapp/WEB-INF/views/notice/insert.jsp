@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,7 +101,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="contact-title">
-                        <h3>∞¯¡ˆªÁ«◊ ¿€º∫</h3>
+                        <h3>Í≥µÏßÄÏÇ¨Ìï≠ ÏûëÏÑ±</h3>
                     </div>
                 </div>
             </div>
@@ -109,29 +109,34 @@
             <div class="row">
                 <div class="col-12">
                 
-                <form name = "frm" action="insert" method="post">
-					<ul class="notice-board-insert">
-						<!-- Contact Form Area -->
+                <form name = "frm">
+                
+	             	    <input type="hidden" name="page" value="${cri.page}">
+						<input type="hidden" name="searchType"value="${cri.searchType}">
+						<input type="hidden" name="keyword" value="${cri.keyword}">
 						
+						
+					<ul class="notice-board-insert">					
+						<!-- Contact Form Area -->				
 						<table>
 							<tr>
-								<td>¿€º∫¿⁄</td>
-								<td><input type="text" name="writer" value="∞¸∏Æ¿⁄"></td>
+								<td>ÏûëÏÑ±Ïûê</td>
+								<td><input type="text" name="writer" value="admin"></td>
 							</tr>
 							<tr>
-								<td>¡¶∏Ò</td>
+								<td>Ï†úÎ™©</td>
 								<td><input type="text" name="title" size=40></td>
 							</tr>
 							<tr>
-								<td>≥ªøÎ</td>
+								<td>ÎÇ¥Ïö©</td>
 								<td><textarea name="content" rows="5" cols="50"></textarea></td>
 							</tr>
 						</table>
 							
 					</ul>
-					<input type="submit" value="¿˙¿Â">
-					 <input type="reset" value="√Îº“"> 
-					 <input	type="button" value="∏Ò∑œ"  onClick="funList()">
+					<button class="small-btn" value="Ï†ÄÏû•" onClick="funInsert()">Ï†ÄÏû•</button>
+				<!--  <input type="reset" value="Ï∑®ÏÜå"> --> 
+					 <button class="small-btn" value="Î™©Î°ù"  onClick="funList()">Î™©Î°ù</button>
 				 </form>
 
 				</div>
@@ -142,7 +147,7 @@
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">
-		<%@include file="../footer.jsp" %>	<!-- footer ∆ƒ¿œ ¿Œ≈¨∑ÁµÂ -->
+		<%@include file="../footer.jsp" %>	<!-- footer ÌååÏùº Ïù∏ÌÅ¥Î£®Îìú -->
 	</div>
     <!-- ##### Footer Area Start ##### -->
 
@@ -170,6 +175,12 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
+        
+        function funInsert(){
+        	frm.action="insert";
+        	frm.method="post";
+        	frm.submit();
+        }
         
         function funList(){
         	frm.action="../noticeboard";
