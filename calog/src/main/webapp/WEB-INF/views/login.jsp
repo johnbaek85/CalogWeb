@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
+ 	 <link rel="stylesheet" href="../resources/css/style.css">
+
     <!-- Title -->
     <title>Fitness Gym - A Modern Fitness Gym Template</title>
 
@@ -18,6 +20,8 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="../resources/style.css">
+    
+   
 
 </head>
 
@@ -100,8 +104,47 @@
         <div class="container">
             <div class="row">
 
-               <h1>로그인 페이지</h1>
-            </div>
+				<div class="login-page">
+					<div class="form">
+						<form class="calog">
+							<h2>Welcome to CaLog</h2>
+							<h4>We provide Check and manage daily and down load our
+								health care service easily.</h4>
+						</form>
+						<form class="register-form" method = "post" action = "/home">
+							<input type="text" placeholder="id" name="user_id" /> <input
+								type="password" placeholder="password" name="password" /> <input
+								type="text" placeholder="name" name="name" /> <input type="text"
+								placeholder="email Address" name="email" /> <input type="text"
+								placeholder="phone Number" name="phone" /> <input type="text"
+								placeholder="address" name="address" /> <input type="text"
+								placeholder="birthday" name="birthday" /> <input type="text"
+								placeholder="gender" name="gender" /> <input type="text"
+								placeholder="height" name="height" /> <input type="text"
+								placeholder="weight" name="weight" /> <input type="hidden"
+								name="bmi" value="weight/height/height*10000" />
+
+							<button>create</button>
+							<p class="message">
+								Already registered? <a href="#">Sign In</a>
+							</p>
+						</form>
+						<form class="login-form" method="post" action="/home">
+							<input type="text" placeholder="id" name="user_id" /> <input
+								type="password" placeholder="password" name="password" />
+							<button>login</button>
+							<p class="message">
+								Not registered? <a href="#">Create an account</a>
+							</p>
+						</form>
+					</div>
+				</div>
+
+				<script
+					src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+				<script src="../resources/js/script.js"></script>
+			</div>
         </div>
     </div>
     <!-- ##### About Us Area End ##### -->
@@ -138,8 +181,20 @@
             s1.setAttribute('crossorigin', '*');
             s0.parentNode.insertBefore(s1, s0);
         })();
+        
+        $("#register-form").on("click", function(){
+        	var user_id = $(register-form).val();
+        	var password = $(register-form).val();
+        	var name = $(register-form).val();
+        	var email = $(register-form).val();
+        	var phone = $(register-form).val();
+        	
+        });
     </script>
     <!-- End of Tawk.to Script -->
+    
+    <!-- 로그인 기능 작성 -->
+   
 </body>
 
 </html>

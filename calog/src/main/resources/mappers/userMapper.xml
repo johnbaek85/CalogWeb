@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="userMapper">
+	
+	<!-- 로그인 -->
+	<select id = "read" resultType = "com.example.domain.UserVO">
+		select * from user
+		where user_id = #{user_id} and password = #{password}
+	</select>
+	
+	<!-- 회원가입 -->
+	<insert id = "insert">
+		insert into user(user_id, password, name, email, phone, address, birthday, gender, height, weight, bmi)
+		values(#{user_id}, #{password}, #{name}, #{email}, #{phone}, #{address}, #{birthday}, #{gender}, #{height}, #{weight}, ((#{weight}/#{height}/#{height}*10000)))
+	</insert>
+		
+	<!-- 회원수정 -->
+	<update id = "update">
+		update user
+		set password = #{password}, checkPassword = #{checkPassword}, name = #{name}, email = #{email}, phone = #{phone}, birthday = #{birthday}, gender = #{gender}, height = #{height}, weight = #{weight}
+		where user_id = #{user_id}
+	</update>
+		
+	<!-- 회원탈퇴 -->
+	<update id = "withdrawal">
+		update user 
+		set del_check_user_id = #{del_check_user_id}
+		where user_id = #{user_id} 
+	</update>
+	
+	<!-- 회원리스트 -->
+	<select id = "list" resultType = "com.example.domain.UserVO">
+		select * from user
+	</select>
+	
+	
+	
+</mapper>
+
+
