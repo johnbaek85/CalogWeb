@@ -62,7 +62,17 @@
                                 </ul>
 
                                 <!-- Login Button -->
+                                
+                                <div id = "login">
+                                	<c:if test="${login.user_id !=null }">
+										<b>${login.user_id }님 환영합니다!!!</b>
+										<input type="button" value="로그아웃" onclick= "location.href='/user/////////////////////////////////////////////////////////logout'">
+                                		
+                                	</c:if>
                                 <a href="login" class="fitness-btn menu-btn ml-30">Login</a>
+                                
+                                </div>
+                                
 
                             </div>
                             <!-- Nav End -->
@@ -221,7 +231,7 @@
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">
-		<%@include file="footer.jsp" %>	<!-- footer 파일 인클루드 -->
+		<%@include file="footer.jsp" %>	<!-- footer íì¼ ì¸í´ë£¨ë -->
 	</div>
     <!-- ##### Footer Area Start ##### -->
 

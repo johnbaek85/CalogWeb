@@ -81,7 +81,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h2>My Data</h2>
+                        <h2>Admin Page</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="#">Home</a></li>

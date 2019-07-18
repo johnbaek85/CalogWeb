@@ -65,9 +65,33 @@ public class HomeController {
 		return "notice";
 	}
 	
+	@RequestMapping(value = "/main/admin-data", method = RequestMethod.GET)
+	public String uadminData(UserVO vo, HttpSession session) {
+		return "admin-data";
+	
+	}
 	@RequestMapping(value = "/main/user-data", method = RequestMethod.GET)
 	public String userDataPost(UserVO vo, HttpSession session) {
 		
+		String user_id;
+		if(session.getAttribute("user_id")==null){
+			user_id = "";
+		}else{
+			user_id = (String)session.getAttribute("user_id");
+		}
+		
+		if(user_id.equals("")){
+			return "/login"; //로그인이 안된경우
+			
+		}else if(user_id.equals("admin")){
+			return "./main/admin-data"; //관리자로 로그인한 경우
+			
+		}else{
+			return "./main/user-data"; //일반유저
+		}
+		
+		
+		/*
 		UserVO vo3 = null;
 		try{
 			vo3 = dao.read(vo);
@@ -81,6 +105,7 @@ public class HomeController {
 			session.setAttribute("user_id", vo.getUser_id());
 			return "/main/user-data";
 		}
+		*/
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
@@ -90,19 +115,21 @@ public class HomeController {
 	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String loginPost(UserVO vo, HttpSession session){
-		
-		UserVO vo2 = null;
-		try {
-			vo2 = dao.read(vo);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		if(vo2 == null){
-			return "/login";
+		String user_id;
+		if(session.getAttribute("user_id")==null){
+			user_id = "";
 		}else{
-			session.setAttribute("user_id", vo.getUser_id());
-			return "/main/user-data";
+			user_id = (String)session.getAttribute("user_id");
+		}
+		
+		if(user_id.equals("")){
+			return "/login"; //로그인이 안된경우
+			
+		}else if(user_id.equals("admin")){
+			return "./main/admin-data"; //관리자로 로그인한 경우
+			
+		}else{
+			return "./main/user-data"; //일반유저
 		}
 		
 	}
