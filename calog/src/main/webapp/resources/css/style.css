@@ -21,9 +21,10 @@ a {
   a:hover {
     text-decoration: none; }
 
+	
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #fff; }
 
 .border-2 {
@@ -983,10 +984,3 @@ h1, h2, h3, h4, h5,
     padding-right: 35px;
 	padding-left: 35px; }
 	
-.video_text{
-	position: absolute;
-	height : 100%;
-	width : 100%;
-	background-color:#fff;
-	z-index:1; 	
-}
