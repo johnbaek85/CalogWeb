@@ -64,7 +64,7 @@
 
                                 <!-- Login Button -->
                                 <a href="../logout" class="fitness-btn menu-btn ml-30">Logout</a>
-
+								
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -140,6 +140,7 @@
         })();
     </script>
     <!-- End of Tawk.to Script -->
+    
 </body>
 
 </html>

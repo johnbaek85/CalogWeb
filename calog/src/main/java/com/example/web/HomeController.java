@@ -66,8 +66,21 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/main/user-data", method = RequestMethod.GET)
-	public String userData() {
-		return "main/user-data";
+	public String userDataPost(UserVO vo, HttpSession session) {
+		
+		UserVO vo3 = null;
+		try{
+			vo3 = dao.read(vo);
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
+		if(vo3 == null){
+			return "/login";
+		}else{
+			session.setAttribute("user_id", vo.getUser_id());
+			return "/main/user-data";
+		}
 	}
 	
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
