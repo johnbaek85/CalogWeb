@@ -91,6 +91,7 @@ img {
   -ms-flex-align: center;
   -ms-grid-row-align: center;
   align-items: center; }
+
   .classy-navbar .nav-brand {
     font-size: 26px;
     font-weight: 500;
@@ -226,37 +227,7 @@ img {
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg); }
 
-/* navbarToggler */
-.classy-navbar-toggler {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  display: none; }
-  .classy-navbar-toggler .navbarToggler {
-    display: inline-block;
-    cursor: pointer; }
-    .classy-navbar-toggler .navbarToggler span {
-      position: relative;
-      background-color: #858585;
-      border-radius: 3px;
-      display: block;
-      height: 3px;
-      margin-top: 5px;
-      padding: 0;
-      -webkit-transition-duration: 300ms;
-      transition-duration: 300ms;
-      width: 30px;
-      cursor: pointer; }
-    .classy-navbar-toggler .navbarToggler.active span:nth-of-type(1) {
-      -webkit-transform: rotate3d(0, 0, 1, 45deg);
-      transform: rotate3d(0, 0, 1, 45deg);
-      top: 8px; }
-    .classy-navbar-toggler .navbarToggler.active span:nth-of-type(2) {
-      opacity: 0; }
-    .classy-navbar-toggler .navbarToggler.active span:nth-of-type(3) {
-      -webkit-transform: rotate3d(0, 0, 1, -45deg);
-      transform: rotate3d(0, 0, 1, -45deg);
-      top: -8px; }
+
 
 .classynav ul li .megamenu {
   position: absolute;

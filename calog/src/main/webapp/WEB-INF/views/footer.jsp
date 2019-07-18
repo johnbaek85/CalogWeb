@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
   <footer class="footer-area section-padding-100-0 bg-img bg-overlay" style="background-image: url(../resources/img/bg-img/bg-11.jpg);">
 
@@ -41,12 +41,12 @@
                                 <div class="single-slide">
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°The best diet and fitness record app I've ever used!"</p>
+                                        <p>â€œThe best diet and fitness record app I've ever used!"</p>
                                         <span>Michael Smith</span>
                                     </div>
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°I can't believe that I lose 20kg through it, I strongly recommend this app to all of you!"</p>
+                                        <p>â€œI can't believe that I lose 20kg through it, I strongly recommend this app to all of you!"</p>
                                         <span>Julia Williams</span>
                                     </div>
                                 </div>
@@ -54,12 +54,12 @@
                                 <div class="single-slide">
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°I almost bankrupted due to my drinking habit, I'd spent about $1,000 a month for alchol, after this app, my life has been changed."</p>
+                                        <p>â€œI almost bankrupted due to my drinking habit, I'd spent about $1,000 a month for alchol, after this app, my life has been changed."</p>
                                         <span>Heavy Drunker</span>
                                     </div>
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°Thank you for your efforts, it changed my daily patterns and it leads me to be a better man!"</p>
+                                        <p>â€œThank you for your efforts, it changed my daily patterns and it leads me to be a better man!"</p>
                                         <span>Food addicted</span>
                                     </div>
                                 </div>
@@ -67,12 +67,12 @@
                                 <div class="single-slide">
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°I can check my sleep pattern and it helps me a lot!"</p>
+                                        <p>â€œI can check my sleep pattern and it helps me a lot!"</p>
                                         <span>Jamman-Bo</span>
                                     </div>
                                     <!-- Single Testimonial -->
                                     <div class="single-testimonial">
-                                        <p>¡°All you need to do is just download this app and sing in, so easy and simple application!"</p>
+                                        <p>â€œAll you need to do is just download this app and sing in, so easy and simple application!"</p>
                                         <span>KOSMO</span>
                                     </div>
                                 </div>
