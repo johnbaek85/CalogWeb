@@ -117,7 +117,7 @@
 			</div>
 
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12" style = "margin:auto">
 					<ul class="notice-board">
 						<!-- Contact Form Area -->
 						
@@ -132,16 +132,18 @@
 								<option value="writer"
 									<c:out value="${cri.searchType=='writer'?'selected':''}"/>>저자</option>
 							</select> 
-						</div>
+						
 							<input type="hidden" name="bno"> 
 							<input type="hidden"name="page" value="${cri.page}">
 							<input class = "keyword-slot" type="text"name="keyword" value="${cri.keyword}"> 
 							<button class = "small-btn"value="검색" onClick="funSearch()">검색</button> 
-							<div class="total">검색데이터:${pm.totalCount}건</div>
+							<div class="total" style = "float:right;font-size: 13pt;color: #838383;margin-top:10px;">게시글 수 :${pm.totalCount}개</div>
+						</div>
+							
 
 						
 					</form>
-						<table>
+						<table class="board" width="100%">
 							<tr>
 								<td width="80">No.</td>
 								<td width="350">Title</td>
