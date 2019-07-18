@@ -8,7 +8,7 @@
 <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>
 <style>
-#search{height:28px; color:white; padding:5pz; margin-bottom:30px;-webkit-box-align: center;}
+#search{}
 #pagination{height:28px; color:white; padding:5pz; margin-bottom:10px; text-align:center; font-color:white;webkit-box-align: center;}
 </style>
 
@@ -27,6 +27,7 @@
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="./resources/style.css">
+    <link rel="stylesheet" href="./resources/css/nice-select.css" type="text/css">
 
 </head>
 
@@ -123,8 +124,7 @@
 						
 					<form name = "frm">
 						<div id = "search">
-							
-							<select name="searchType" class="serchType_slot">
+							<select name="searchType" class="serachType">
 								<option value="title"
 									<c:out value="${cri.searchType=='title'?'selected':''}"/>>제목</option>
 								<option value="content"
@@ -132,14 +132,14 @@
 								<option value="writer"
 									<c:out value="${cri.searchType=='writer'?'selected':''}"/>>저자</option>
 							</select> 
-			
+						</div>
 							<input type="hidden" name="bno"> 
 							<input type="hidden"name="page" value="${cri.page}">
 							<input class = "keyword-slot" type="text"name="keyword" value="${cri.keyword}"> 
 							<button class = "small-btn"value="검색" onClick="funSearch()">검색</button> 
-							검색데이터:${pm.totalCount}건
+							<div class="total">검색데이터:${pm.totalCount}건</div>
 
-						</div>
+						
 					</form>
 						<table>
 							<tr>
@@ -191,6 +191,7 @@
     <!-- Active js -->
     <script src="./resources/js/active.js"></script>
     <!-- Live Chat Code :: Start of Tawk.to Script -->
+    <script src="./resources/js/jquery.nice-select.min.js"></script>
     <script>
         var Tawk_API = Tawk_API || {},
             Tawk_LoadStart = new Date();
