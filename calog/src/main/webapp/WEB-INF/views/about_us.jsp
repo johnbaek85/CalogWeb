@@ -116,7 +116,7 @@
                 <!-- About Thumbnail -->
                 <div class="col-12 col-lg-5">
                     <div class="about--thumb">
-                        <img src="./resources/img/bg-img/bg-12.jpg" alt="">
+                        <img src="./resources/img/calogimage/FGraph.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -142,10 +142,10 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-teachers-area mb-100">
                         <!-- Bg Gradients -->
-                        <div class="teachers-bg-gradients"></div>
+                   
                         <!-- Thumbnail -->
                         <div class="teachers-thumbnail">
-                            <img src="./resources/img/team-img/t1.png" alt="">
+                            <img src="./resources/img/calogimage/DGraph.jpg" alt="">
                         </div>
                         <!-- Meta Info -->
                         <div class="teachers-info">
@@ -159,10 +159,10 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-teachers-area mb-100">
                         <!-- Bg Gradients -->
-                        <div class="teachers-bg-gradients"></div>
+                    
                         <!-- Thumbnail -->
                         <div class="teachers-thumbnail">
-                            <img src="./resources/img/team-img/t2.png" alt="">
+                            <img src="./resources/img/calogimage/FGraph.jpg" alt="">
                         </div>
                         <!-- Meta Info -->
                         <div class="teachers-info">
@@ -176,10 +176,10 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-teachers-area mb-100">
                         <!-- Bg Gradients -->
-                        <div class="teachers-bg-gradients"></div>
+                       
                         <!-- Thumbnail -->
                         <div class="teachers-thumbnail">
-                            <img src="./resources/img/team-img/t3.png" alt="">
+                            <img src="./resources/img/calogimage/SGraph.jpg" alt="">
                         </div>
                         <!-- Meta Info -->
                         <div class="teachers-info">
@@ -193,10 +193,10 @@
                 <div class="col-12 col-sm-6 col-lg-3">
                     <div class="single-teachers-area mb-100">
                         <!-- Bg Gradients -->
-                        <div class="teachers-bg-gradients"></div>
+                 
                         <!-- Thumbnail -->
                         <div class="teachers-thumbnail">
-                            <img src="./resources/img/team-img/t4.png" alt="">
+                            <img src="./resources/img/calogimage/AGraph.jpg" alt="">
                         </div>
                         <!-- Meta Info -->
                         <div class="teachers-info">
@@ -210,6 +210,43 @@
         </div>
     </section>
     <!-- ##### Team Area End ##### -->
+     <!-- ##### About Us Area Special Features ##### -->
+    <div class="about-us--area section-padding-100">
+        <div class="container">
+            <div class="row">
+
+                <!-- About Text -->
+                <div class="col-12 col-lg-7">
+                    <div class="section-heading">
+                        <h6>Calorie Log</h6>
+                        <h2>Special Features</h2>
+                    </div>
+                    <div class="about-text">
+                     <h4>Alcohol Measurement</h4>
+                        <p>You can check your alcohol saturation percentage and check the total amount of the alcohol you have had during specific period as well through the detector(sold separately).<br> Don't do drunk drive!</p>
+                        
+                       
+                    </div>
+                    <div class="about-text">
+                    <h4>Snoring Measurement</h4>
+                        <p>You can check whether you snore or not last night by measuring noise while you are sleeping. Please see a doctor if you snore too aloud.</p>
+                        
+                       
+                    </div>
+                </div>
+
+                <!-- About Thumbnail -->
+                <div class="col-12 col-lg-5">
+                    <div class="about--thumb">
+                        <img src="./resources/img/calogimage/ASCheck.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ##### About Us Area Special Features End ##### -->
+    
 
     <!-- ##### Footer Area Start ##### -->
     <div id="footer">

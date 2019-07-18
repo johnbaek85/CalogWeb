@@ -36,8 +36,8 @@
                     <nav class="classy-navbar justify-content-between" id="fitnessNav">
 
                         <!-- Nav brand -->
-                        <a href="/" class="nav-brand"><img src="./resources/img/core-img/logo.png" alt=""></a>
-
+        <!--                 <a href="/" class="nav-brand"><img src="./resources/img/core-img/logo.png" alt=""></a> -->
+						<a href="/" class="home-btn" style="color:#7FFF00;">CALOG</a>
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
                             <span class="navbarToggler"><span></span><span></span><span></span></span>
@@ -91,37 +91,34 @@
     <!-- ##### Hero Area End ##### -->
 
 
-    <!-- ##### About Us Area Start ##### -->
+
     <div class="about-us-area section-padding-100-0">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-heading">
-                        <h6>Calorie Log</h6>
-                        <h2>What is CALOG???</h2>
+                        <h6>Smartphone Application</h6>
+                        <h2>CALOG</h2>
                     </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-12 col-lg-8">
-                    <div class="row">
-                        <!-- About Text -->
-                        <div class="col-12 col-lg-6">
+                    <div class="row1">
+                        
+                        <div class="col-12col-lg-6">
                             <div class="about-text">
-                                <p>You just need to select what you have during the meals and the exercises you have done in a day. It automatically calculate and show you the calories you have taken and consumed during a day, a wekk, a month and a year with graph chart to see it and compare it easily.</p>
+                                <p> Calog is a smartphone application developed by team 7Hours(Every developers who has 'H' in their names from KOSMO IT institution in Korea.)
+                                <br> The name Calog is compounded word;Calorie+Log, which it means that it calculates the calories the user intakes and consumes a day, records it and shows to the user for help manage daily live for better health and life.
+                                <br> For more detail, please click below 'see more' button or contact menu on the upper menu. </p>
                             </div>
                         </div>
-                        <!-- About Text -->
-                        <div class="col-12 col-lg-6">
-                            <div class="about-text">
-                                <p>Furthermore, you can check your alcohol saturation percentage and check the total amount of the alcohol you have had during specific period as well through the detector(sold separately). You just put it everything you put in your body, we will calculate them and show you.</p>
-                            </div>
-                        </div>
-                        <!-- About Button Group -->
+                        
                         <div class="col-12">
                             <div class="about-btn-group mt-50">
                                 <a href="#" class="btn fitness-btn mr-3">download now</a>
+                                 <a href="about_us" class="btn fitness-btn mr-3">See more</a>
                                
                             </div>
                         </div>
@@ -135,87 +132,7 @@
             </div>
         </div>
     </div>
-    <!-- ##### About Us Area End ##### -->
 
-
-
-
-
-    <!-- ##### Pricing Table Area Start ##### -->
-    <div class="fitness-pricing-table-area section-padding-100-0 bg-img bg-overlay bg-fixed" style="background-image: url(./resources/img/bg-img/bg-7.jpg);">
-        <div class="container">
-            <div class="row justify-content-center">
-
-                <!-- Single Price Table -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-price-table mb-100">
-                        <img src="./resources/img/bg-img/bg-8.jpg" alt="">
-                        <div class="price-table-content">
-                            <!-- price -->
-                            <h2 class="price">
-                                $50<span>/ Month</span>
-                            </h2>
-                            <h5>Woman Fitness Class</h5>
-                            <!-- Price Data -->
-                            <ul class="price-data">
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Sit amet aliquet auctor nisi</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Dut purus eleifentincid</li>
-                            </ul>
-                            <!-- btn -->
-                            <a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Price Table -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-price-table mb-100">
-                        <img src="./resources/img/bg-img/bg-9.jpg" alt="">
-                        <div class="price-table-content">
-                            <!-- price -->
-                            <h2 class="price">
-                                $70<span>/ Month</span>
-                            </h2>
-                            <h5>Spinning Class + BONUS</h5>
-                            <!-- Price Data -->
-                            <ul class="price-data">
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Sit amet aliquet auctor nisi</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Dut purus eleifentincid</li>
-                            </ul>
-                            <!-- btn -->
-                            <a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Single Price Table -->
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-price-table mb-100">
-                        <img src="./resources/img/bg-img/bg-10.jpg" alt="">
-                        <div class="price-table-content">
-                            <!-- price -->
-                            <h2 class="price">
-                                $90<span>/ Month</span>
-                            </h2>
-                            <h5>All Inclusive Gym</h5>
-                            <!-- Price Data -->
-                            <ul class="price-data">
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Donec molestie tincidunt tellus</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Sit amet aliquet auctor nisi</li>
-                                <li><i class="fa fa-circle" aria-hidden="true"></i> Dut purus eleifentincid</li>
-                            </ul>
-                            <!-- btn -->
-                            <a href="#" class="btn fitness-btn mt-30">Enroll Now</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- ##### Pricing Table Area End ##### -->
 
   
 

@@ -396,14 +396,53 @@ img {
     .small-btn.btn-2:hover, .small-btn.btn-2:focus {
       color: #ffffff;
       background-color: #101214;
-      border-color: #101214; }
+	  border-color: #101214; }
 	  
+
+
+
+.home-btn {
+   position: relative;
+  z-index: 9;
+  text-align: center;
+  min-width: 200px;
+  height: 45px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration-style: solid;
+  border-radius: 10px;
+  padding: 0 30px;
+  font-size: 20px;
+  line-height: 39px;
+  font-weight: 0;
+  text-transform: uppercase;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  margin-top: 3px;
+  border: 3px solid #38b143;}
+.home-btn:hover, .home-btn:focus {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #38b143; }	  
+	  
+
+
+
+
+
+
 .serchType{
 	border-bottom: 1px solid #E7E7E7;
 	float: none;
 	margin-top: -10px;
 	height: 34px;
 	line-height: 34px;
+}
+
+.row1{
+	width:100%;
+
 }
 
 
@@ -1099,15 +1138,15 @@ position: relative;
     transition-duration: 500ms; }
     .single-teachers-area .teachers-info:after {
       content: '';
-      width: 24px;
+      width: 30px;
       height: 120%;
       background-color: #ffffff;
       top: -2px;
-      right: -10px;
+      right: -15px;
       position: absolute;
       z-index: 10;
-      -webkit-transform: rotate(18deg);
-      transform: rotate(18deg); }
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg); }
     .single-teachers-area .teachers-info h6 {
       margin-bottom: 0;
       color: #ffffff;
