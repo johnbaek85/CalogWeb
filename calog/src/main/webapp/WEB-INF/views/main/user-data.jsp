@@ -11,7 +11,7 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Fitness Gym - A Modern Fitness Gym Template</title>
+    <title>${user_id}</title>
 
     <!-- Favicon -->
     <link rel="icon" href="../resources/img/core-img/favicon.ico">
@@ -63,7 +63,7 @@
                                 </ul>
 
                                 <!-- Login Button -->
-                                <a href="../login" class="fitness-btn menu-btn ml-30">Login</a>
+                                <a href="../logout" class="fitness-btn menu-btn ml-30">Logout</a>
 
                             </div>
                             <!-- Nav End -->

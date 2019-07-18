@@ -129,7 +129,7 @@
 								Already registered? <a href="#">Sign In</a>
 							</p>
 						</form>
-						<form class="login-form" method="post" action="/home">
+						<form class="login-form" method="post" action="/login">
 							<input type="text" placeholder="id" name="user_id" /> <input
 								type="password" placeholder="password" name="password" />
 							<button>login</button>
@@ -188,6 +188,7 @@
         	var name = $(register-form).val();
         	var email = $(register-form).val();
         	var phone = $(register-form).val();
+        	alert("click");
         	
         });
     </script>
