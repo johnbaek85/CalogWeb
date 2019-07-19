@@ -1,9 +1,6 @@
 package com.example.persistence;
 
-import java.util.ArrayList;
-
 import com.example.domain.UserVO;
-import com.mysql.jdbc.Connection;
 
 public interface UserDAO {
 	

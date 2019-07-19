@@ -1412,6 +1412,140 @@ text-align: center;}
         background: linear-gradient(to right, #b6e358, #38b143);
         color: #ffffff; }
   .fitness-tabs-content .tab-content h6 {
-    font-size: 18px; }
+	font-size: 18px; }
+	
+
+/*추가 스타일*/
+
+/* :: 3.8.0 Small Button */
+.small-btn {
+   position: relative;
+  z-index: 9;
+  display: inline-block;
+  background: #ffffff;
+  min-width: 100px;
+  height: 45px;
+  color: #38b143;
+  border-radius: 10px;
+  padding: 0 30px;
+  font-size: 14px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  margin-top: 3px;
+  border: 3px solid #38b143;}
+.small-btn:hover, .small-btn:focus {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #38b143; }
+  .small-btn.btn-2 {
+    background-color: #38b143;
+    color: #ffffff; }
+    .small-btn.btn-2:hover, .small-btn.btn-2:focus {
+      color: #ffffff;
+      background-color: #101214;
+	  border-color: #101214; }
+	  
+
+
+
+.home-btn {
+   position: relative;
+  z-index: 9;
+  text-align: center;
+  min-width: 200px;
+  height: 45px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration-style: solid;
+  border-radius: 10px;
+  padding: 0 30px;
+  font-size: 20px;
+  line-height: 39px;
+  font-weight: 0;
+  text-transform: uppercase;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  margin-top: 3px;
+  border: 3px solid #38b143;}
+.home-btn:hover, .home-btn:focus {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #38b143; }	  
+	  
+
+.keyword-slot{
+position: relative;
+    z-index: 10;
+    height: 45px;
+    width: 20%;
+    background-color: #eef3f6;
+    font-size: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 0;
+    padding: 15px 25px; 
+}
+
+
+
+
+.serchType{
+	border-bottom: 1px solid #E7E7E7;
+	float: none;
+	margin-top: -10px;
+	height: 34px;
+	line-height: 34px;
+}
+
+.row1{
+	width:100%;
+
+}
+
+
+	  
+/* :: 10.1 Notice Board CSS */
+  .notice-board td {
+text-shadow: 0px 0px 10px #FFFFFF;
+
+border: 3px solid #eaeaea;
+
+background-color: #FFFFFF;
+
+padding: 12px;
+
+font-family: Verdana, Geneva, sans-serif;
+
+font-size: 13pt;
+
+color: #838383;
+
+text-align: center;}
+    .notice-board td:hover, .notice-board td:focus {
+	  color: #38b143; }
+	  
+
+	 /* :: 10.1 Notice Board CSS */
+  .notice-board-insert td {
+text-shadow: 0px 0px 10px #FFFFFF;
+
+border: 3px solid #eaeaea;
+
+background-color: #FFFFFF;
+
+padding: 12px;
+
+font-family: Verdana, Geneva, sans-serif;
+
+font-size: 13pt;
+
+color: #838383;}
+
+
 
 /*# sourceMappingURL=style.css.map */

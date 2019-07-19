@@ -64,6 +64,7 @@
 
                                 <!-- Login Button -->
                                 <a href="../logout" class="fitness-btn menu-btn ml-30">Logout</a>
+                                <a href="../loginchange" class="fitness-btn menu-btn ml-30">Modify</a>
 								
                             </div>
                             <!-- Nav End -->

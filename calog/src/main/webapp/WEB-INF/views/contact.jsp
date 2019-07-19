@@ -4,6 +4,7 @@
 <html lang="en">
 
 <head>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -63,7 +64,13 @@
                                 </ul>
 
                                 <!-- Login Button -->
+                                <c:if test ="${user_id==null}">
                                 <a href="login" class="fitness-btn menu-btn ml-30">Login</a>
+                                </c:if>
+                                <c:if test="${user_id!=null}">
+								<a href="logout" class="fitness-btn menu-btn ml-30">Logout</a>
+								</c:if>
+                                <!-- <a href="login" class="fitness-btn menu-btn ml-30">Login</a> -->
 
                             </div>
                             <!-- Nav End -->

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
- 	 <link rel="stylesheet" href="../resources/css/style.css">
+ 	<link rel="stylesheet" href="../resources/css/style.css">
 
     <!-- Title -->
     <title>Fitness Gym - A Modern Fitness Gym Template</title>
@@ -60,15 +60,15 @@
                             <div class="classynav">
                                  <ul>
                                     <li><a href="/">Home</a></li> 
-                                    <li><a href="about-us">About Us</a></li>
-                                    <li><a href="./main/user-data">User Data</a></li>
-                                    <li><a href="notice">Notice</a></li>
-                                    <li><a href="contact">Contact</a></li>
+                                    <li><a href="/about-us">About Us</a></li>
+                                    <li><a href="/main/user-data">User Data</a></li>
+                                    <li><a href="/notice">Notice</a></li>
+                                    <li><a href="/contact">Contact</a></li>
                                 </ul>
 
                                 <!-- Login Button -->
-                                <a href="login" class="fitness-btn menu-btn ml-30">Login</a>
-
+                                <a href="/login" class="fitness-btn menu-btn ml-30">Login</a>
+                                
                             </div>
                             <!-- Nav End -->
                         </div>
@@ -112,17 +112,17 @@
 								health care service easily.</h4>
 						</form>
 						<form class="register-form" method = "post" action = "/home">
-							<input type="text" placeholder="id" name="user_id" /> <input
-								type="password" placeholder="password" name="password" /> <input
-								type="text" placeholder="name" name="name" /> <input type="text"
-								placeholder="email Address" name="email" /> <input type="text"
-								placeholder="phone Number" name="phone" /> <input type="text"
-								placeholder="address" name="address" /> <input type="text"
-								placeholder="birthday" name="birthday" /> <input type="text"
-								placeholder="gender" name="gender" /> <input type="text"
-								placeholder="height" name="height" /> <input type="text"
-								placeholder="weight" name="weight" /> <input type="hidden"
-								name="bmi" value="weight/height/height*10000" />
+							<input type="text" placeholder="id" name="user_id" /> 
+							<input type="password" placeholder="password" name="password" />
+							<input type="text" placeholder="name" name="name" /> 
+							<input type="text" placeholder="email Address" name="email" /> 
+							<input type="text" placeholder="phone Number" name="phone" /> 
+							<input type="text" placeholder="address" name="address" /> 
+							<input type="text" placeholder="birthday" name="birthday" /> 
+							<input type="text" placeholder="gender" name="gender" />
+							<input type="text" placeholder="height" name="height" /> 
+							<input type="text" placeholder="weight" name="weight" /> 
+							<input type="hidden" name="bmi" value="weight/height/height*10000" />
 
 							<button>create</button>
 							<p class="message">
@@ -194,8 +194,6 @@
     </script>
     <!-- End of Tawk.to Script -->
     
-    <!-- 로그인 기능 작성 -->
-   
 </body>
 
 </html>
